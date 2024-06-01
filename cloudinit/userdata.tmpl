@@ -1,0 +1,6 @@
+#cloud-config
+
+fqdn: "${hostname}.${domain}"
+
+runcmd: 
+ - echo "127.0.0.1 ${hostname} ${hostname}.${domain} >> /etc/hosts"
